@@ -1,0 +1,95 @@
+.profile {
+  display: flex;
+
+  &__main {
+    text-align: center;
+    position: relative;
+    padding-top: 310px;
+    flex-grow: 1;
+    background-image: url("../img/pexels-photo-207172.jpeg");
+    background-repeat: no-repeat;
+    // background-position: top center;
+    // background-size: 100% 280px;
+    background-size: cover;
+    background-position: 0 -415px;
+  }
+
+  &__name {
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 5px;
+  }
+
+  &__nickname {
+    font-size: 26px;
+  }
+
+  &__photo {
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  &__add-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__about {
+    margin-left: 20px;
+    width: 20%;
+    min-width: 250px;
+  }
+
+  &__quote {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+    min-height: 30%;
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Georgia", sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    font-style: italic;
+
+    &::before,
+    &::after {
+      content: "\"";
+      position: absolute;
+      top: -40px;
+      left: -20px;
+      font-size: 100px;
+      color: #cccccc;
+    }
+
+    &::after {
+      top: calc(100% - 95px);
+      right: -25px;
+      left: auto;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__info-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__info {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 18px;
+
+    &--bold {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}

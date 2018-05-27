@@ -1,0 +1,14 @@
+.main-nav {
+  color: #4d4d4d;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+}

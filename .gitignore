@@ -5,3 +5,7 @@ temp_*
 migrations/
 __pycache__/
 .idea/
+.vscode
+source/img
+source/csscomb.json
+source/.stylelintrc

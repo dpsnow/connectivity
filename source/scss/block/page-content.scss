@@ -1,0 +1,25 @@
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20%;
+  padding-top: 85px;
+  // justify-content: space-between;
+
+  &__profile {
+    flex-grow: 1;
+    width: 70%;
+  }
+
+  &__posts {
+    flex-grow: 1;
+    margin-top: 20px;
+    width: 70%;
+  }
+
+  &__add-info {
+    flex-shrink: 1;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 20%;
+  }
+}

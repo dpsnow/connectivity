@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Didact Gothic", "Arial", sans-serif;
+  color: $text-color--main;
+  font-style: normal;
+  background-image: linear-gradient(to bottom, #b3b3b3, #e4e4e4);
+}
+
+* {
+  box-sizing: border-box;
+}

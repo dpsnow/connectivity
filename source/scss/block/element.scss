@@ -1,0 +1,10 @@
+.element {
+  & {
+    margin-left: 20px;
+  }
+
+  .add-info & + & {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.page-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  min-height: 65px;
+  background-image: linear-gradient(to right, #302362, #392292);
+  z-index: 10;
+
+  &__nav {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: calc(5% - 20px);
+    width: 15%;
+  }
+}
