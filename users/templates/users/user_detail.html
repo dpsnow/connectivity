@@ -1,0 +1,136 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <header class="page-header">
+    <div class="logo"><img src="logo" alt="Логотип"></div>
+    <form action="" method="get"><input type="search" name="" id=""></form>
+    <a href="">Вход</a>
+    <nav class="page-header__nav main-nav card">
+      <h1 class="visually-hidden">Навигация</h1>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="link1" class="main-nav__link">Моя страница</a></li>
+        <li class="main-nav__item"><a href="link2" class="main-nav__link">Новости</a></li>
+        <li class="main-nav__item"><a href="link3" class="main-nav__link">Друзья</a></li>
+        <li class="main-nav__item"><a href="link4" class="main-nav__link">Сообщения</a></li>
+        <li class="main-nav__item"><a href="link5" class="main-nav__link">Фотографии</a></li>
+        <li class="main-nav__item"><a href="link6" class="main-nav__link">Настройки</a></li>
+        <li class="main-nav__item"><a href="link7" class="main-nav__link">Рекоментации</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-content container">
+    <h1 class="visually-hidden">Личная страница пользователя</h1>
+    <section class="page-content__profile profile">
+      <div class="profile__main card">
+        <h2 class="profile__name"> {{ user.first_name }} {{ user.last_name }} </h2>
+        <span class="profile__nickname"> {{ user.nick_name }} </span>
+        <picture>
+          <img class="profile__photo user-photo" src="img/avatar_7498432.png" alt="Фотография пользователя" srcset="" width="290" height="290">
+        </picture>
+        <ul class="profile__add-info">
+          <li class="icon-item"><span>105</span> публикаций</li>
+          <li class="icon-item"><span>256</span> фотографий</li>
+          <li class="icon-item"><span>7</span> друзей</li>
+          <li class="icon-item"><span>105</span> item4</li>
+        </ul>
+      </div>
+      <div class="profile__about card">
+        <p class="profile__quote">Я самый идеальный организм на планете!</p>
+        <dl class="profile__info-list">
+          <dt class="profile__info">Дата регистрации</dt>
+          <dd class="profile__info profile__info--bold"> {{ user.date_of_birth }} </dd>
+          <dt class="profile__info">Дата регистрации</dt>
+          <dd class="profile__info profile__info--bold">29.05.1880</dd>
+          <dt class="profile__info">Дата регистрации</dt>
+          <dd class="profile__info profile__info--bold">29.05.1880</dd>
+          <dt class="profile__info">Дата регистрации</dt>
+          <dd class="profile__info profile__info--bold">29.05.1880</dd>
+        </dl>
+      </div>
+    </section>
+    <section class="page-content__posts posts card">
+      <div class="post">
+        <div class="post__header">
+          <div class="post__name">Натигорь Королаев</div>
+          <div class="post__user-photo">
+            <img class="user-photo" src="" alt="Фотография автора публикации" srcset="">
+          </div>
+        </div>
+        <div class="post__content">
+          <h3 class="post__title">Почему я дружу с дельфинами? Или 105 фактов обо мне.</h3>
+          <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quisquam eligendi. Iusto quae quaerat facilis quo ratione. Autem nulla veritatis quo adipisci reiciendis incidunt explicabo cumque! Sit minus ex ipsa.</p>
+        </div>
+        <div class="post__footer">
+          <ul class="post__stats">
+            <li>лайки репосты коменты</li>
+            <li>лайки репосты коменты</li>
+            <li>лайки репосты коменты</li>
+          </ul>
+          <ul class="post__tags">
+            <li>#tag1</li>
+            <li>#tag2</li>
+            <li>#tag3</li>
+            <li>#tag4</li>
+          </ul>
+          <div class="post__date" title="Дата публикации">25 минут назад</div>
+        </div>
+      </div>
+    </section>
+    <aside class="page-content__add-info add-info">
+      <section class="add-info__friends friends card">
+        <div class="friends__header">
+          <a href="">Друзей 150</a>
+          <a href="">Друзей онлайн 4</a>
+        </div>
+        <ul class="friends__list">
+          <li class="friends__item friend">
+            <a href="" class="friend__link">
+              <img src="img/17241-200.png" alt="Аватарка1" class="friend__photo">
+              <p class="friend__name">Дельфин Дельфинов1</p>
+            </a>
+          </li>
+          <li class="friends__item friend">
+            <a href="" class="friend__link">
+              <img src="img/17239-200.png" alt="Аватарка2" class="friend__photo">
+              <p class="friend__name">Дельфин Дельфинов2</p>
+            </a>
+          </li>
+          <li class="friends__item friend">
+            <a href="" class="friend__link">
+              <img src="img/17241-200.png" alt="Аватарка3" class="friend__photo">
+              <p class="friend__name">Дельфин Дельфинов3</p>
+            </a>
+          </li>
+          <li class="friends__item friend">
+            <a href="" class="friend__link">
+              <img src="img/17239-200.png" alt="Аватарка4" class="friend__photo">
+              <p class="friend__name">Дельфин Дельфинов4</p>
+            </a>
+          </li>
+          <li class="friends__item friend">
+            <a href="" class="friend__link">
+              <img src="img/17241-200.png" alt="Аватарка5" class="friend__photo">
+              <p class="friend__name">Дельфин Дельфинов5</p>
+            </a>
+          </li>
+          <li class="friends__item friend">
+            <a href="" class="friend__link">
+              <img src="img/17239-200.png" alt="Аватарка6" class="friend__photo">
+              <p class="friend__name">Дельфин Дельфинов6</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="add-info__photos card">
+        <a href="" class="mini-photo"><img src="" alt="Фото пользователя1"></a>
+        <a href="" class="mini-photo"><img src="" alt="Фото пользователя2"></a>
+        <a href="" class="mini-photo"><img src="" alt="Фото пользователя3"></a>
+        <a href="" class="mini-photo"><img src="" alt="Фото пользователя4"></a>
+        <a href="" class="mini-photo"><img src="" alt="Фото пользователя5"></a>
+        <a href="" class="mini-photo"><img src="" alt="Фото пользователя6"></a>
+      </section>
+    </aside>
+  </main>
+  <footer></footer>
+
+{% endblock %}

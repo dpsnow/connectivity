@@ -1,0 +1,7 @@
+connectivity_venv/
+*.sqlite3
+tips.txt
+temp_*
+migrations/
+__pycache__/
+.idea/
